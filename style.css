@@ -46,7 +46,7 @@ nav img {
 }
 .hero {
     color: #fff;
-    padding: 0 13rem;
+    padding: 0 13vw;
     margin-top: 6rem;
     display: flex;
     justify-content: space-between;
@@ -74,14 +74,8 @@ nav img {
     width: fit-content;
     border-radius: 3px;
 }
-.hero-img {
-    background-color: #fff;
-    width: 20rem;
-    height: 21.4rem;
-}
 .hero img {
    margin-bottom: 5rem;
-   margin-right: 3rem;
 }
 .about{
     display: flex;
@@ -124,6 +118,7 @@ nav img {
  display: flex;
  align-items: center;
  padding: 4rem 13rem;
+ gap: 3rem;
 }
 .pro-1a p{
 color: white;
@@ -141,7 +136,7 @@ font-weight: lighter;
     margin-bottom: 1rem;
 }
 .pro-1b{
-    padding-left: 4rem;
+    /* padding-left: 4rem; */
     line-height: 3rem;
 }
 .pro-1a img{
@@ -174,7 +169,7 @@ font-weight: lighter;
     display: flex;
     align-items: center;
     padding: 4rem 13rem;
-    gap: .5rem;
+    gap: 3rem;
 }
 .pro-2a h1{
     color: white;
@@ -208,10 +203,10 @@ font-weight: lighter;
     display: flex;
     align-items: center;
     padding: 4rem 13rem;
-    gap: .5rem;
+    gap: 3rem;
 }
 .pro-3b{
-     padding-left: 4rem;
+     /* padding-left: 4rem; */
      line-height: 3rem;
  } 
  .pro-3a img{
@@ -250,9 +245,9 @@ font-weight: lighter;
         justify-content: center;
         align-items: center;
         gap: .5rem;
-        box-sizing: border-box;
         border-radius: 10px;
         margin: 2rem auto;
+        padding: 0 1rem;
     }
     .touch p{
         color: #fff;
@@ -264,7 +259,7 @@ font-weight: lighter;
         color: #fff;
         font-weight: bolder;
         margin-bottom: 2rem;
-        font-size: xx-large;
+        font-size: 2.5rem
     }
     .icons{
         display: flex;
@@ -301,4 +296,40 @@ font-weight: lighter;
         display: flex;
         align-items: center;
          gap: 1rem;
+    }
+
+    @media (max-width: 640px) {
+        :root {
+            font-size: 10px;
+        }
+
+        .hero{
+            flex-direction: column;
+        }
+        .hero img {
+            margin-top: 2rem;
+        }
+        .about {
+            display: block;
+            padding: 2rem 4rem;
+        }
+        .project1,
+        .project3 {
+            display: block;
+            padding: 1rem 4rem;
+        }
+        .project2 {
+             display: none;
+        }
+        img.sule {
+            width: 33rem;
+            height: 33rem;
+        }
+
+        nav {
+            display: none;
+        }
+        .copy{
+            display: none;
+        }
     }
